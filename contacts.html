@@ -23,6 +23,80 @@
   <main>
     <section>
 
+      <h1>Контакти</h1>
+
+      <p>
+        Email:
+        <a href="mailto:darkoto12@gmail.com">darkoto12@gmail.com</a>
+      </p>
+
+      <p>
+        Telegram:
+        <a target="_blank" href="https://t.me/Artemchen">@Artemchen</a>
+      </p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Контактна інформація</legend>
+
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Повідомлення</legend>
+
+          <label for="subject">Тема:</label>
+          <select id="subject" name="subject" required>
+
+            <option value="">-- Оберіть тему --</option>
+            <option value="general">Загальне питання</option>
+            <option value="cooperation">Співпраця</option>
+            <option value="feedback">Відгук</option>
+
+          </select>
+
+          <p>Тип звернення:</p>
+
+          <label>
+            <input type="radio" name="type" value="question" required>
+            Питання
+          </label>
+
+          <label>
+            <input type="radio" name="type" value="suggestion">
+            Пропозиція
+          </label>
+
+          <label>
+            <input type="radio" name="type" value="complaint">
+            Скарга
+          </label>
+
+          <label for="message">Повідомлення:</label>
+
+          <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+
+        </fieldset>
+
+        <label>
+          <input type="checkbox" name="consent" required>
+          Я погоджуюсь на обробку персональних даних
+        </label>
+
+        <br><br>
+
+        <button type="submit">Надіслати</button>
+
+      </form>
+
     </section>
   </main>
   <footer>
